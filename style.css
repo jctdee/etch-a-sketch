@@ -51,6 +51,11 @@ header h1 {
   border-radius: 15px;
 }
 
+.setting button:hover {
+  transform: scale(1.1);
+}
+
+
 .color-picker-container {
   width: 75px;
   height: 75px;
@@ -60,10 +65,15 @@ header h1 {
 
 .setting input[type="color"] {
   display: block;
-  margin: 0 auto;
+  margin: 0px auto;
   height: 100%;
   width: 100%;
   transform: scale(1.5);
+}
+
+.color-picker-container:hover {
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -97,9 +107,36 @@ header h1 {
 }
 
 footer {
-  /* margin-top: auto; */
   width: 100%;
   position: absolute;
   bottom: 0;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .main-divider {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .sketch-container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-divider {
+    flex-direction: column-reverse;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  footer {
+    position: relative;
+    margin-top: auto;
+  }
 }
