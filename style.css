@@ -26,7 +26,7 @@ header h1 {
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
-  margin: 0 auto;
+  margin: 0 auto 10vh;
   max-width: 1280px;
 }
 
@@ -94,4 +94,12 @@ header h1 {
 .active {
   background: black;
   color: white;
+}
+
+footer {
+  /* margin-top: auto; */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 }
