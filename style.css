@@ -1,0 +1,97 @@
+:root {
+  font-family: 'Roboto Slab', arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(#F5F7FA, #B8C6DB);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.main-divider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.setting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  width: 200px;
+}
+
+.setting {
+  width: 100%;
+}
+
+
+.setting button {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.color-picker-container {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.setting input[type="color"] {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.5);
+}
+
+
+.setting input[type="range"] {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+#grid-range-label {
+  margin-top: -15px;
+}
+
+.grid-range-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sketch-container {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  background: white;
+  box-shadow: 15px 15px 10px grey;
+}
+
+
+.active {
+  background: black;
+  color: white;
+}
