@@ -24,7 +24,7 @@ function colorChange(e) {
   currentColor = this.value;
 }
 
-// ASSIGN BUTTON FUNCTIONS HERE
+// ASSIGN BUTTONS HERE
 let currentMode = "";
 let modeList = document.querySelectorAll('.mode');
 try {
@@ -94,7 +94,7 @@ function randomRGB() {
   let b = randomInteger();
   return `${r},${g},${b}`; 
 }
-
+//  END OF RANDOM RGB GENERATOR -->
 
 // <-- REASSIGN THE EVENT LISTENERES HERE
 function assignCellListeners() {
@@ -103,14 +103,26 @@ function assignCellListeners() {
       cell.addEventListener('mousedown', fillCell);
       cell.addEventListener('mousedown', changeMouseStatus);
       cell.addEventListener('mouseup', changeMouseStatus);
+      // cell.addEventListener('mouseout', changeMouseStatus);
       cell.addEventListener('mouseover', fillCell);
     })
   } catch (err) {
     console.log(err);
   }
 }
-function changeMouseStatus() {
+function changeMouseStatus(e) {
   mouseDown = !mouseDown;
+  // if(e.type === 'mousedown') {
+  //   try {
+  //     Array.from(gridCell).forEach(cell => {
+  //       cell.addEventListener('mouseleave', function() {
+  //         mouseDown = !mouseDown;
+  //       })
+  //     })
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
 }
 // END OF REASSIGNING EVENT LISTENERS HERE -->
 
